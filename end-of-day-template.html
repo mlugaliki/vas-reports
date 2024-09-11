@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hour SMS delivery</title>
+</head>
+<body style="font-family: 'Poppins', Arial, sans-serif">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td align="center" style="padding: 20px;">
+            <table class="content" width="600" border="0" cellspacing="0" cellpadding="0"
+                   style="border-collapse: collapse; border: 1px solid #cccccc;">
+                <!-- Header -->
+                <tr>
+                    <td class="header"
+                        style="background-color: #345C72; padding: 40px; text-align: center; color: white; font-size: 24px;">
+                        End of day Report
+                    </td>
+                </tr>
+                <!-- Body -->
+                <tr>
+                    <td class="body"
+                        style="padding: 10px 40px 0px 40px; text-align: left; font-size: 16px; line-height: 1.6;">
+                        Hello, Admin! <br>
+                        Yesterday's delivery & subscription report
+                    </td>
+                </tr>
+                <tr>
+                    <td class="header"
+                        style="padding: 10px 0px 10px 40px; text-align: left; color: black; font-size: 15px; font-weight: bold">
+                        SMS Deliveries
+                    </td>
+                </tr>
+                <tr>
+                    <td class="body"
+                        style="padding: 0px 40px 20px 40px; text-align: left; font-size: 16px; line-height: 1.6;">
+                        <table class="content" width="500" border="1" cellspacing="0" cellpadding="0"
+                               style="border-collapse: collapse; border: 1px solid #cccccc;">
+                            <thead>
+                            <tr>
+                                <th style="border-collapse: collapse; border: 1px solid #cccccc; text-align: center;">
+                                    Delivered
+                                </th>
+                                <th style="border-collapse: collapse; border: 1px solid #cccccc; text-align: center;">
+                                    Status
+                                </th>
+                                <th style="border-collapse: collapse; border: 1px solid #cccccc; text-align: center;">
+                                    Service
+                                </th>
+                                <th style="border-collapse: collapse; border: 1px solid #cccccc; text-align: center;">
+                                    Revenue
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {DELIVERIES}
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="4"
+                                    style="margin: 10px; text-align: left; font-size: 16px; line-height: 1.6;"></td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </td>
+                </tr>
+                <!--Subscribers -->
+                <tr>
+                    <td class="header"
+                        style="padding: 10px 0px 10px 40px; text-align: left; color: black; font-size: 15px; font-weight: bold">
+                        Subscription
+                    </td>
+                </tr>
+                <tr>
+                    <td class="body"
+                        style="padding: 0px 40px 20px 40px; text-align: left; font-size: 16px; line-height: 1.6;">
+                        <table class="content" width="500" border="1" cellspacing="0" cellpadding="0"
+                               style="border-collapse: collapse; border: 1px solid #cccccc;">
+                            <thead>
+                            <tr>
+                                <th style="border-collapse: collapse; border: 1px solid #cccccc; text-align: center;">
+                                    Subscribers
+                                </th>
+                                <th style="border-collapse: collapse; border: 1px solid #cccccc; text-align: center;">
+                                    Service
+                                </th>
+                                <th style="border-collapse: collapse; border: 1px solid #cccccc; text-align: center;">
+                                    Action
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {SUBSCRIPTIONS}
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="4"
+                                    style="margin: 10px; text-align: left; font-size: 16px; line-height: 1.6;"></td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Footer -->
+                <tr>
+                    <td class="footer"
+                        style="background-color: #333333; padding: 40px; text-align: center; color: white; font-size: 14px;">
+                        Copyright &copy; 2024 | GuruHub
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
